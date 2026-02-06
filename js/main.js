@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // === CAROUSEL ===
     initCarousel();
+
+    // === MODERN ENHANCEMENTS ===
+    initScrollProgress();
+    initParticles();
+    initTypingEffect();
+    initStaggeredAnimations();
 });
 
 // === CAROUSEL FUNCTIONS ===
@@ -371,3 +377,187 @@ if (typeof module !== 'undefined' && module.exports) {
         debounce
     };
 }
+
+// ============================================
+// MODERN ENHANCEMENTS - Eye-catching Effects
+// ============================================
+
+// === SCROLL PROGRESS BAR ===
+function initScrollProgress() {
+    // Create progress bar element if it doesn't exist
+    let progressBar = document.querySelector('.scroll-progress');
+    if (!progressBar) {
+        progressBar = document.createElement('div');
+        progressBar.className = 'scroll-progress';
+        document.body.prepend(progressBar);
+    }
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        progressBar.style.width = scrollPercent + '%';
+    });
+}
+
+// === PARTICLE GENERATION ===
+function initParticles() {
+    const heroSection = document.querySelector('.hero');
+    if (!heroSection) return;
+
+    // Check if particles container already exists
+    let particlesContainer = heroSection.querySelector('.particles-container');
+    if (!particlesContainer) {
+        particlesContainer = document.createElement('div');
+        particlesContainer.className = 'particles-container';
+        heroSection.appendChild(particlesContainer);
+    }
+
+    // Create particles
+    const particleCount = window.innerWidth < 768 ? 15 : 30;
+
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+
+        // Random positioning and animation delay
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 15 + 's';
+        particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+
+        particlesContainer.appendChild(particle);
+    }
+
+    // Add floating shapes
+    let floatingShapes = heroSection.querySelector('.floating-shapes');
+    if (!floatingShapes) {
+        floatingShapes = document.createElement('div');
+        floatingShapes.className = 'floating-shapes';
+        floatingShapes.innerHTML = `
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        `;
+        heroSection.appendChild(floatingShapes);
+    }
+}
+
+// === TYPING EFFECT ===
+function initTypingEffect() {
+    const heroSubtitle = document.querySelector('.hero-subtitle');
+    if (!heroSubtitle || heroSubtitle.dataset.typed === 'true') return;
+
+    const originalText = heroSubtitle.textContent.trim();
+    heroSubtitle.textContent = '';
+    heroSubtitle.dataset.typed = 'true';
+
+    // Add cursor
+    const cursor = document.createElement('span');
+    cursor.className = 'typing-cursor';
+    heroSubtitle.appendChild(cursor);
+
+    let charIndex = 0;
+    const typingSpeed = 30; // milliseconds per character
+
+    function typeChar() {
+        if (charIndex < originalText.length) {
+            heroSubtitle.insertBefore(
+                document.createTextNode(originalText.charAt(charIndex)),
+                cursor
+            );
+            charIndex++;
+            setTimeout(typeChar, typingSpeed);
+        } else {
+            // Remove cursor after typing is complete
+            setTimeout(() => {
+                cursor.style.display = 'none';
+            }, 2000);
+        }
+    }
+
+    // Start typing after a short delay
+    setTimeout(typeChar, 500);
+}
+
+// === STAGGERED SCROLL ANIMATIONS ===
+function initStaggeredAnimations() {
+    // Add stagger-item class to cards within grids
+    const gridCards = document.querySelectorAll('.grid .card');
+    gridCards.forEach((card, index) => {
+        if (!card.classList.contains('stagger-item')) {
+            card.classList.add('stagger-item');
+            card.classList.add('card-shimmer'); // Add shimmer effect
+        }
+    });
+
+    // Add stat-card class to quick stats
+    const statCards = document.querySelectorAll('.grid-4 .card');
+    statCards.forEach(card => {
+        if (!card.classList.contains('stat-card')) {
+            card.classList.add('stat-card');
+        }
+    });
+
+    // Intersection Observer for staggered animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const staggerObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.stagger-item').forEach(item => {
+        staggerObserver.observe(item);
+    });
+}
+
+// === ENHANCED HERO SETUP ===
+function enhanceHero() {
+    const hero = document.querySelector('.hero');
+    const heroTitle = document.querySelector('.hero-title');
+
+    if (heroTitle && !heroTitle.classList.contains('gradient-text-animated')) {
+        // Add animated gradient to title on hover
+        heroTitle.addEventListener('mouseenter', () => {
+            heroTitle.classList.add('gradient-text-animated');
+        });
+        heroTitle.addEventListener('mouseleave', () => {
+            heroTitle.classList.remove('gradient-text-animated');
+        });
+    }
+
+    // Add scroll indicator if not present
+    if (hero && !hero.querySelector('.scroll-indicator')) {
+        const scrollIndicator = document.createElement('div');
+        scrollIndicator.className = 'scroll-indicator';
+        scrollIndicator.innerHTML = `
+            <div class="scroll-indicator-mouse">
+                <div class="scroll-indicator-wheel"></div>
+            </div>
+        `;
+        hero.appendChild(scrollIndicator);
+
+        // Click to scroll down
+        scrollIndicator.addEventListener('click', () => {
+            const nextSection = hero.nextElementSibling;
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
+    // Add glow to primary CTA button
+    const ctaButton = document.querySelector('.hero-buttons .btn-primary');
+    if (ctaButton && !ctaButton.classList.contains('btn-glow')) {
+        ctaButton.classList.add('btn-glow');
+    }
+}
+
+// Initialize hero enhancements
+document.addEventListener('DOMContentLoaded', enhanceHero);
