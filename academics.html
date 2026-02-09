@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Academics at MACHA - Explore our K-12 curriculum, STEM programs, arts education, and graduation requirements.">
+    <title>Academics - MACHA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Information Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-contact">
+                <a href="tel:0712598134"><i class="fas fa-phone"></i> 0712598134</a>
+                <a href="mailto:macha.schools@gmail.com"><i class="fas fa-envelope"></i> macha.schools@gmail.com</a>
+            </div>
+            <div class="top-bar-social">
+                <a href="https://www.facebook.com/profile.php?id=100068255200266" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486530/macha-school/macha-school/logo_macha.png"
+                    alt="MACHA Logo">
+                <div class="logo-text">
+                    <span class="logo-name">MACHA</span>
+                    <span class="logo-tagline">Maasai Community Hope Academy</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navbar-menu" id="navMenu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="admissions.html" class="navbar-link">Admissions</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="academics.html" class="navbar-link active">Academics</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="student-life.html" class="navbar-link">Student Life</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html" class="navbar-link">Contact</a>
+                </li>
+                <li class="navbar-item" style="margin-left: 1rem;">
+                    <a href="apply.html" class="btn btn-primary btn-sm">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero-academics animate">
+        <div class="hero-content">
+            <h1 class="hero-title">Academic Excellence</h1>
+            <p class="hero-subtitle">
+                A rigorous, innovative curriculum that prepares students for success in high school and beyond
+            </p>
+        </div>
+    </section>
+
+    <!-- Curriculum Overview -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Our Curriculum</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">
+                    Following Kenya's Competency-Based Curriculum (CBC) for holistic development
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📚</div>
+                    <h3>Lower Primary (Grade 1-3)</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">
+                        Building strong foundations through play-based, activity-centered learning that develops
+                        core competencies and values.
+                    </p>
+                    <ul style="color: var(--gray-600); line-height: 1.8;">
+                        <li>Literacy Activities (English, Kiswahili)</li>
+                        <li>Mathematical Activities</li>
+                        <li>Environmental Activities</li>
+                        <li>Creative Activities (Art, Music, PE)</li>
+                        <li>Religious Education (CRE)</li>
+                        <li>Life Skills</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
+                    <h3>Upper Primary (Grade 4-6)</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">
+                        Advancing skills and knowledge with deeper subject exploration, preparing students
+                        for junior secondary education.
+                    </p>
+                    <ul style="color: var(--gray-600); line-height: 1.8;">
+                        <li>English & Kiswahili Languages</li>
+                        <li>Mathematics</li>
+                        <li>Integrated Science</li>
+                        <li>Social Studies</li>
+                        <li>Health Education & Hygiene</li>
+                        <li>Agriculture & Nutrition</li>
+                        <li>Creative Arts & Sports</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
+                    <h3>Junior Secondary (Grade 7-9)</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">
+                        Developing specialized skills and competencies through subject-based learning and
+                        practical application.
+                    </p>
+                    <ul style="color: var(--gray-600); line-height: 1.8;">
+                        <li>Core Subjects (Languages, Math, Sciences)</li>
+                        <li>Pre-Technical Studies</li>
+                        <li>Business Studies</li>
+                        <li>Computer Science</li>
+                        <li>Life Skills Education</li>
+                        <li>Sports & Physical Education</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CBC Features -->
+            <div class="card mt-xl"
+                style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);">
+                <h3 class="text-center mb-lg">CBC Key Features</h3>
+                <div class="grid grid-2">
+                    <div>
+                        <h5 style="color: var(--primary-color); margin-bottom: 1rem;">🎯 Competency-Based Learning</h5>
+                        <p style="color: var(--gray-600);">
+                            Focus on developing practical skills, critical thinking, and real-world application
+                            rather than rote memorization.
+                        </p>
+                    </div>
+                    <div>
+                        <h5 style="color: var(--primary-color); margin-bottom: 1rem;">🌱 Holistic Development</h5>
+                        <p style="color: var(--gray-600);">
+                            Nurturing cognitive, psychomotor, and affective domains for well-rounded student growth.
+                        </p>
+                    </div>
+                    <div>
+                        <h5 style="color: var(--primary-color); margin-bottom: 1rem;">💻 Digital Literacy</h5>
+                        <p style="color: var(--gray-600);">
+                            Preparing students for the digital age with technology integration across all learning
+                            areas.
+                        </p>
+                    </div>
+                    <div>
+                        <h5 style="color: var(--primary-color); margin-bottom: 1rem;">✝️ Values & Character</h5>
+                        <p style="color: var(--gray-600);">
+                            Integrating Christian values, patriotism, integrity, and social responsibility throughout
+                            the curriculum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Calendar -->
+    <section class="section" id="calendar" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Academic Calendar 2026</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">Key dates for the upcoming academic year</p>
+            </div>
+
+            <div class="card" id="calendar-content"
+                style="padding: 0; overflow: hidden; background: #ffffff; backdrop-filter: none;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr style="background: var(--primary-gradient); color: white;">
+                            <th style="padding: 1.25rem; font-weight: 600;">Event</th>
+                            <th style="padding: 1.25rem; font-weight: 600;">Opening</th>
+                            <th style="padding: 1.25rem; font-weight: 600;">Closing</th>
+                            <th style="padding: 1.25rem; font-weight: 600;">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--gray-200);">
+                            <td style="padding: 1rem; font-weight: 600;">Term I</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">6th January, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">2nd April, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">13 Weeks</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--gray-200);">
+                            <td style="padding: 1rem; font-weight: 600;">Half term</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">25th February, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">1st March, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">5 Days</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--gray-200);">
+                            <td style="padding: 1rem; font-weight: 600;">April Holiday</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">7th April, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">24th April, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">3 Weeks</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--gray-200);">
+                            <td style="padding: 1rem; font-weight: 600;">Term II</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">27th April, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">31st July, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">14 Weeks</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--gray-200);">
+                            <td style="padding: 1rem; font-weight: 600;">Half term</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">24th June, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">28th June, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">5 Days</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--gray-200);">
+                            <td style="padding: 1rem; font-weight: 600;">August Holiday</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">3rd August, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">21st August, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">3 Weeks</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--gray-200);">
+                            <td style="padding: 1rem; font-weight: 600;">Term III</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">24th August, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">23rd October, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">9 Weeks</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--gray-200);">
+                            <td style="padding: 1rem; font-weight: 600;">KPSEA</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">26th October, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">29th October, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">4 Days</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--gray-200);">
+                            <td style="padding: 1rem; font-weight: 600;">KILEA</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">26th October, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">30th October, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">5 Days</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; font-weight: 600;">KJSEA & KPLEA</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">26th October, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">5th November, 2026</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">7 Days</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; font-weight: 600;">December Holiday</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">26th October, 2026</td>
+                            <td style="padding: 1rem; color: var(--primary-color);">1st January, 2027</td>
+                            <td style="padding: 1rem; color: var(--gray-600);">10 Weeks</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center mt-lg">
+                <button id="download-pdf" class="btn btn-outline btn-sm">Download Full Calendar (PDF)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spiritual Life & Values -->
+    <section class="section" id="spiritual"
+        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem; align-items: center;">
+                <div>
+                    <h2 style="color: white; margin-bottom: 1.5rem;">Spiritual Life & Values</h2>
+                    <p
+                        style="font-size: 1.125rem; line-height: 1.8; color: rgba(255,255,255,0.95); margin-bottom: 2rem;">
+                        At MACHA, spiritual development is at the heart of everything we do. Our Seventh-day
+                        Adventist values shape our curriculum, campus culture, and character development programs,
+                        preparing students to serve God and their communities.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div class="card-glass" style="padding: 1.5rem; background: rgba(255,255,255,0.15);">
+                            <h5 style="color: white; margin-bottom: 0.5rem;">📖 Bible Study & Worship</h5>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.9375rem;">
+                                Daily devotions, weekly Sabbath services, and Bible classes integrated into the
+                                curriculum
+                            </p>
+                        </div>
+
+                        <div class="card-glass" style="padding: 1.5rem; background: rgba(255,255,255,0.15);">
+                            <h5 style="color: white; margin-bottom: 0.5rem;">💚 Character Development</h5>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.9375rem;">
+                                Values-based education focusing on integrity, compassion, service, and moral excellence
+                            </p>
+                        </div>
+
+                        <div class="card-glass" style="padding: 1.5rem; background: rgba(255,255,255,0.15);">
+                            <h5 style="color: white; margin-bottom: 0.5rem;">🤝 Community Service</h5>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.9375rem;">
+                                Outreach programs, mission trips, and service projects that transform lives in the
+                                Maasai community
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border-radius: var(--radius-2xl); padding: 2rem; text-align: center;">
+                    <h3 style="color: white; margin-bottom: 2rem;">Our Spiritual Impact</h3>
+                    <div style="display: flex; flex-direction: column; gap: 2rem;">
+                        <div>
+                            <div style="font-size: 3rem; font-weight: 800; color: white;">100%</div>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">Students Participate in Worship</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 3rem; font-weight: 800; color: white;">50+</div>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">Community Service Hours/Year</p>
+                        </div>
+                        <div>
+                            <div style="font-size: 3rem; font-weight: 800; color: white;">Weekly</div>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">Sabbath Celebrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arts Program -->
+    <section class="section" id="arts" style="background: var(--white);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Arts & Creativity</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">
+                    Nurturing creative expression through music, theater, and visual arts
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-music"></i></div>
+                    <h4>Music Program</h4>
+                    <p style="color: var(--gray-600);">
+                        Orchestra, band, choir, and private lessons in piano, guitar, violin, and more.
+                        Annual concerts and competitions.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-masks-theater"></i></div>
+                    <h4>Theater Arts</h4>
+                    <p style="color: var(--gray-600);">
+                        Drama classes, annual productions, technical theater, and participation in
+                        regional theater festivals.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-palette"></i></div>
+                    <h4>Visual Arts</h4>
+                    <p style="color: var(--gray-600);">
+                        Painting, sculpture, photography, digital art, and ceramics. Student gallery
+                        exhibitions throughout the year.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graduation Requirements -->
+    <section class="section" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Graduation Requirements</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">
+                    Requirements for junior secondary and senior school successful transition
+                </p>
+            </div>
+
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <div class="grid grid-2">
+                    <div style="padding: 1rem; border-bottom: 1px solid var(--gray-200);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">English</span>
+                            <span style="color: var(--primary-color); font-weight: 700;">4 credits</span>
+                        </div>
+                    </div>
+
+                    <div style="padding: 1rem; border-bottom: 1px solid var(--gray-200);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">Mathematics</span>
+                            <span style="color: var(--primary-color); font-weight: 700;">4 credits</span>
+                        </div>
+                    </div>
+
+                    <div style="padding: 1rem; border-bottom: 1px solid var(--gray-200);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">Science</span>
+                            <span style="color: var(--primary-color); font-weight: 700;">3 credits</span>
+                        </div>
+                    </div>
+
+                    <div style="padding: 1rem; border-bottom: 1px solid var(--gray-200);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">Social Studies</span>
+                            <span style="color: var(--primary-color); font-weight: 700;">3 credits</span>
+                        </div>
+                    </div>
+
+                    <div style="padding: 1rem; border-bottom: 1px solid var(--gray-200);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">Foreign Language</span>
+                            <span style="color: var(--primary-color); font-weight: 700;">2 credits</span>
+                        </div>
+                    </div>
+
+                    <div style="padding: 1rem; border-bottom: 1px solid var(--gray-200);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">Physical Education</span>
+                            <span style="color: var(--primary-color); font-weight: 700;">2 credits</span>
+                        </div>
+                    </div>
+
+                    <div style="padding: 1rem; border-bottom: 1px solid var(--gray-200);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">Fine Arts</span>
+                            <span style="color: var(--primary-color); font-weight: 700;">1 credit</span>
+                        </div>
+                    </div>
+
+                    <div style="padding: 1rem; border-bottom: 1px solid var(--gray-200);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600;">Electives</span>
+                            <span style="color: var(--primary-color); font-weight: 700;">5 credits</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="margin-top: 2rem; padding: 1.5rem; background: rgba(102, 126, 234, 0.05); border-radius: var(--radius-lg); text-align: center;">
+                    <h4 style="margin-bottom: 0.5rem;">Total Required: 24 Credits</h4>
+                    <p style="color: var(--gray-600); margin: 0;">Plus community service hours and senior project</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- High School Placement -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem; align-items: center;">
+                <div class="card" style="background: var(--secondary-gradient); color: white; padding: 3rem;">
+                    <h3 style="color: white; margin-bottom: 1.5rem;">High School Placement & Guidance</h3>
+                    <p style="color: rgba(255,255,255,0.95); font-size: 1.0625rem; margin-bottom: 2rem;">
+                        Our dedicated guidance team support students through every step of the
+                        transition to top-tier national and extra-county high schools across Kenya.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div>
+                            <h5 style="color: white; margin-bottom: 0.5rem;">100%</h5>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">High School Transition Rate</p>
+                        </div>
+                        <div>
+                            <h5 style="color: white; margin-bottom: 0.5rem;">85%+</h5>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">Placement in National Schools</p>
+                        </div>
+                        <div>
+                            <h5 style="color: white; margin-bottom: 0.5rem;">Top 10%</h5>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">KCP/KPSEA Performance Regionally</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="mb-lg">Top High School Placements</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Alliance High
+                            School</span>
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Kenya High
+                            School</span>
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Mangu High
+                            School</span>
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Starehe Boys'
+                            Centre</span>
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Loreto High School
+                            Limuru</span>
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Precious Blood
+                            Riruta</span>
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Kapsabet High
+                            School</span>
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Maseno School</span>
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Maranda High
+                            School</span>
+                        <span class="card" style="padding: 0.75rem 1.5rem; display: inline-block;">Maryhill Girls' High
+                            School</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: var(--dark-gradient); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: 1rem;">Explore Our Academic Programs</h2>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 2rem;">
+                Download our academic handbook or schedule a campus tour to learn more.
+            </p>
+            <div class="flex-center" style="gap: 1rem; flex-wrap: wrap;">
+                <a href="#" class="btn btn-primary btn-lg">Download Handbook</a>
+                <a href="contact.html" class="btn btn-outline btn-lg"
+                    style="border-color: white; color: white;">Schedule Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>MACHA</h4>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">
+                        Maasai Community Hope Academy - Transforming lives through Christ-centered education since 2009.
+                        Serving the Maasai community with hope and excellence.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">
+                        Join our newsletter to receive the latest news and updates from MACHA.
+                    </p>
+                    <form id="newsletter-form" class="mt-sm">
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <input type="email" placeholder="Your Email" required
+                                style="padding: 0.75rem 1rem; border-radius: var(--radius-md); border: none; flex: 1; min-width: 200px;">
+                            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-location-dot" style="margin-right: 10px;"></i> MAASAI COMMUNITY HOPE
+                            ACADEMY - ENDOINYO ONKOPIT</li>
+                        <li><i class="fas fa-box" style="margin-right: 10px;"></i> BOX 430 – 40700, KILGORIS</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> TEL: 0712598134 / 0724231396 /
+                            0724762819</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> macha.schools@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MACHA - Maasai Community Hope Academy. All rights reserved. | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Privacy Policy</a> | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('download-pdf').addEventListener('click', function () {
+            const element = document.getElementById('calendar-content');
+            const opt = {
+                margin: 0.5,
+                filename: 'docs_academic_calendar_2026.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
+            };
+            html2pdf().set(opt).from(element).save();
+        });
+    </script>
+</body>
+
+</html>

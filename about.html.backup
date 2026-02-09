@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="About MACHA - Learn about our history, mission, values, and the dedicated team that makes our school exceptional.">
+    <title>About Us - MACHA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Information Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-contact">
+                <a href="tel:0712598134"><i class="fas fa-phone"></i> 0712598134</a>
+                <a href="mailto:macha.schools@gmail.com"><i class="fas fa-envelope"></i> macha.schools@gmail.com</a>
+            </div>
+            <div class="top-bar-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/images/logo_macha.png" alt="MACHA Logo">
+                <div class="logo-text">
+                    <span class="logo-name">MACHA</span>
+                    <span class="logo-tagline">Maasai Community Hope Academy</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navbar-menu" id="navMenu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link active">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="admissions.html" class="navbar-link">Admissions</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="academics.html" class="navbar-link">Academics</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="student-life.html" class="navbar-link">Student Life</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html" class="navbar-link">Contact</a>
+                </li>
+                <li class="navbar-item" style="margin-left: 1rem;">
+                    <a href="apply.html" class="btn btn-primary btn-sm">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero-default animate" style="min-height: 60vh;">
+        <div class="hero-content">
+            <h1 class="hero-title">Our Story</h1>
+            <p class="hero-subtitle">
+                17 years of educational excellence, innovation, and transforming lives
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem; align-items: center;">
+                <div>
+                    <h2 class="mb-lg">Our Mission</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.8; color: var(--gray-700);">
+                        MACHA is committed to providing a transformative educational experience
+                        that empowers students to become innovative thinkers, compassionate leaders, and
+                        responsible global citizens. We foster academic excellence, character development,
+                        and a lifelong love of learning in a nurturing, multicultural environment.
+                    </p>
+                </div>
+                <div class="card"
+                    style="background: var(--primary-gradient); color: white; text-align: center; padding: 3rem;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;"><i class="fas fa-eye"></i></div>
+                    <h3 style="color: white; margin-bottom: 1rem;">Our Vision</h3>
+                    <p style="color: rgba(255,255,255,0.95); font-size: 1.0625rem;">
+                        To be the leading educational institution that shapes future leaders who make
+                        positive impacts in their communities and the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Pillars -->
+    <section class="section" id="pillars" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Why Choose MACHA?</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600); max-width: 700px; margin: 0 auto;">
+                    We are dedicated to holistic development through four key pillars of excellence.
+                </p>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-brain"></i></div>
+                    <h4>Engaging Minds</h4>
+                    <p style="color: var(--gray-600); font-size: 0.9375rem;">
+                        Fostering curiosity and critical thinking through innovative teaching methods and individualized
+                        attention.
+                    </p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-globe"></i></div>
+                    <h4>Globally Focused</h4>
+                    <p style="color: var(--gray-600); font-size: 0.9375rem;">
+                        Preparing students to lead in an interconnected world by celebrating diversity and broad
+                        perspectives.
+                    </p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-pray"></i></div>
+                    <h4>Preparing for Eternity</h4>
+                    <p style="color: var(--gray-600); font-size: 0.9375rem;">
+                        Anchoring academic success in a strong spiritual foundation that looks beyond this world.
+                    </p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-hand-holding-heart"></i></div>
+                    <h4>Building Character</h4>
+                    <p style="color: var(--gray-600); font-size: 0.9375rem;">
+                        Instilling values of integrity, service, and responsibility as the true measures of success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Timeline -->
+    <section class="section" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Our History</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">
+                    A legacy of excellence spanning over a decade
+                </p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card mb-lg">
+                    <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary-color); min-width: 100px;">
+                            2010</div>
+                        <div>
+                            <h4>Foundation</h4>
+                            <p style="color: var(--gray-600); margin: 0;">
+                                MACHA was founded with just 45 students and a vision to provide
+                                quality education rooted in strong values and academic rigor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-lg">
+                    <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary-color); min-width: 100px;">
+                            2015</div>
+                        <div>
+                            <h4>International Expansion</h4>
+                            <p style="color: var(--gray-600); margin: 0;">
+                                Opened our doors to all Kenyan students, beginning our journey as a
+                                truly multicultural institution with students from 47 Counties.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-lg">
+                    <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary-color); min-width: 100px;">
+                            2020</div>
+                        <div>
+                            <h4>STEM Excellence Program</h4>
+                            <p style="color: var(--gray-600); margin: 0;">
+                                Launched our award-winning STEM program with state-of-the-art laboratories
+                                and partnerships with leading technology companies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--primary-color); min-width: 100px;">
+                            2025</div>
+                        <div>
+                            <h4>Modern Campus Renovation</h4>
+                            <p style="color: var(--gray-600); margin: 0;">
+                                Completed a ksh 1.8 million campus modernization project, including new
+                                dormitories and innovation labs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="section" id="values" style="background: var(--white);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Our Core Values</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">
+                    The principles that guide everything we do
+                </p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card text-center">
+                    <div style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-star"></i></div>
+                    <h4>Excellence</h4>
+                    <p style="color: var(--gray-600);">
+                        We pursue the highest standards in academics, character, and service,
+                        challenging students to reach their full potential.
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-shield-halved"></i></div>
+                    <h4>Integrity</h4>
+                    <p style="color: var(--gray-600);">
+                        We foster honesty, ethical behavior, and personal responsibility in all
+                        aspects of school life.
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-heart"></i></div>
+                    <h4>Compassion</h4>
+                    <p style="color: var(--gray-600);">
+                        We cultivate empathy, kindness, and service to others, building a caring
+                        and supportive community.
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-earth-africa"></i></div>
+                    <h4>Global Citizenship</h4>
+                    <p style="color: var(--gray-600);">
+                        We prepare students to thrive in an interconnected world and make positive
+                        contributions to society.
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-lightbulb"></i></div>
+                    <h4>Innovation</h4>
+                    <p style="color: var(--gray-600);">
+                        We embrace creativity, critical thinking, and adaptability to prepare
+                        students for tomorrow's challenges.
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-people-group"></i></div>
+                    <h4>Diversity</h4>
+                    <p style="color: var(--gray-600);">
+                        We celebrate our multicultural community and learn from our differences
+                        to build understanding and respect.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="section" style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Leadership Team</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">
+                    Meet the dedicated professionals leading MACHA as of 2025
+                </p>
+            </div>
+
+            <div class="grid grid-4" style="gap: 1.5rem;">
+                <!-- Teacher 1 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MO
+                    </div>
+                    <h5>MR. OPIYO</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 1</p>
+                </div>
+
+                <!-- Teacher 2 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--secondary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MT
+                    </div>
+                    <h5>MR. TITUS</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 2</p>
+                </div>
+
+                <!-- Teacher 3 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MK
+                    </div>
+                    <h5>MR. KORIR</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 3</p>
+                </div>
+
+                <!-- Teacher 4 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MC
+                    </div>
+                    <h5>MR. CHIRCHIR</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 4</p>
+                </div>
+
+                <!-- Teacher 5 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--secondary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MP
+                    </div>
+                    <h5>MD. PICOTY</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 5</p>
+                </div>
+
+                <!-- Teacher 6 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MT
+                    </div>
+                    <h5>MR. TOO</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 6</p>
+                </div>
+
+                <!-- Teacher 7 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MO
+                    </div>
+                    <h5>MR. OMARI</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 7</p>
+                </div>
+
+                <!-- Teacher 8 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--secondary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MQ
+                    </div>
+                    <h5>MD. QUINTER</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 8</p>
+                </div>
+
+                <!-- Teacher 9 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        ML
+                    </div>
+                    <h5>MD. LYDIA</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 9</p>
+                </div>
+
+                <!-- Teacher 10 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MD
+                    </div>
+                    <h5>MR. DALTON</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 10</p>
+                </div>
+
+                <!-- Teacher 11 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--secondary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MA
+                    </div>
+                    <h5>MD. ABIGAEL</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 11</p>
+                </div>
+
+                <!-- Teacher 12 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MA
+                    </div>
+                    <h5>MR. AARON</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 12</p>
+                </div>
+
+                <!-- Teacher 13 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MV
+                    </div>
+                    <h5>MD. VELMA</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 13</p>
+                </div>
+
+                <!-- Teacher 14 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--secondary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MP
+                    </div>
+                    <h5>MD. PATRICIA</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 14</p>
+                </div>
+
+                <!-- Teacher 15 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MS
+                    </div>
+                    <h5>MR. SAMOEI</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 15</p>
+                </div>
+
+                <!-- Teacher 16 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--primary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MK
+                    </div>
+                    <h5>MR. KINARA</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 16</p>
+                </div>
+
+                <!-- Teacher 17 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--secondary-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MM
+                    </div>
+                    <h5>MD. MARY</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 17</p>
+                </div>
+
+                <!-- Teacher 18 -->
+                <div class="card text-center" style="padding: 1.5rem;">
+                    <div
+                        style="width: 80px; height: 80px; margin: 0 auto 1rem; background: var(--accent-gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.25rem;">
+                        MO
+                    </div>
+                    <h5>MR. OBADIAH</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">Code: 18</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accreditations -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Accreditations & Memberships</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">
+                    Recognized for excellence by leading educational organizations
+                </p>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card text-center" style="padding: 2rem;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-certificate"></i></div>
+                    <h5>MoE Registered</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">
+                        Fully registered with the Ministry of Education, Kenya
+                    </p>
+                </div>
+
+                <div class="card text-center" style="padding: 2rem;">
+                    <div style="margin-bottom: 1rem;">
+                        <img src="assets/images/logo_adventist.png" alt="SDA Logo" style="height: 80px;">
+                    </div>
+                    <h5>SDA Church Education</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">
+                        Recognized by the SDA Church, East Kenya Union Conference
+                    </p>
+                </div>
+
+                <div class="card text-center" style="padding: 2rem;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-scroll"></i></div>
+                    <h5>KNEC Exam Centre</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">
+                        Approved Examination Centre for KPSEA and KJSEA
+                    </p>
+                </div>
+
+                <div class="card text-center" style="padding: 2rem;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary-color);"><i
+                            class="fas fa-book-open"></i></div>
+                    <h5>CBC Curriculum</h5>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin: 0;">
+                        Authorized KICD Curriculum Implementation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: var(--dark-gradient); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: 1rem;">Experience Excellence</h2>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 2rem;">
+                Visit our campus and see firsthand what makes MACHA special.
+            </p>
+            <div class="flex-center" style="gap: 1rem; flex-wrap: wrap;">
+                <a href="contact.html" class="btn btn-primary btn-lg">Schedule a Visit</a>
+                <a href="admissions.html" class="btn btn-outline btn-lg"
+                    style="border-color: white; color: white;">Learn About Admissions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>MACHA</h4>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">
+                        Maasai Community Hope Academy - Transforming lives through Christ-centered education since 2009.
+                        Serving the Maasai community with hope and excellence.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">
+                        Join our newsletter to receive the latest news and updates from MACHA.
+                    </p>
+                    <form id="newsletter-form" class="mt-sm">
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <input type="email" placeholder="Your Email" required
+                                style="padding: 0.75rem 1rem; border-radius: var(--radius-md); border: none; flex: 1; min-width: 200px;">
+                            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-location-dot" style="margin-right: 10px;"></i> MAASAI COMMUNITY HOPE
+                            ACADEMY - ENDOINYO ONKOPIT</li>
+                        <li><i class="fas fa-box" style="margin-right: 10px;"></i> BOX 430 – 40700, KILGORIS</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> TEL: 0712598134 / 0724231396 /
+                            0724762819</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> macha.schools@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MACHA - Maasai Community Hope Academy. All rights reserved. | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Privacy Policy</a> | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

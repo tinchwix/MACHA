@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply to MACHA - Complete your application for Maasai Community Hope Academy.">
+    <title>Apply Now - MACHA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Information Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-contact">
+                <a href="tel:0712598134"><i class="fas fa-phone"></i> 0712598134</a>
+                <a href="mailto:macha.schools@gmail.com"><i class="fas fa-envelope"></i> macha.schools@gmail.com</a>
+            </div>
+            <div class="top-bar-social">
+                <a href="https://www.facebook.com/profile.php?id=100068255200266" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486530/macha-school/macha-school/logo_macha.png"
+                    alt="MACHA Logo">
+                <div class="logo-text">
+                    <span class="logo-name">MACHA</span>
+                    <span class="logo-tagline">Maasai Community Hope Academy</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navbar-menu" id="navMenu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="admissions.html" class="navbar-link">Admissions</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="academics.html" class="navbar-link">Academics</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="student-life.html" class="navbar-link">Student Life</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html" class="navbar-link">Contact</a>
+                </li>
+                <li class="navbar-item" style="margin-left: 1rem;">
+                    <a href="apply.html" class="btn btn-primary btn-sm active">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-default animate" style="min-height: 50vh;">
+        <div class="hero-content">
+            <h1 class="hero-title">Start Your Application</h1>
+            <p class="hero-subtitle">
+                Complete the form below to begin your journey at MACHA. We review all applications carefully.
+            </p>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="section" style="background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);">
+        <div class="container">
+
+            <!-- Success Message (hidden by default) -->
+            <div id="successMessage"
+                style="display: none; background: #c6f6d5; border: 1px solid #38a169; color: #276749; padding: 2rem; border-radius: 1rem; text-align: center; max-width: 600px; margin: 0 auto;">
+                <i class="fas fa-check-circle" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                <h2 style="margin-bottom: 0.5rem;">Application Submitted!</h2>
+                <p style="margin-bottom: 1.5rem;">Thank you for applying to MACHA. We will review your application and
+                    contact you soon.</p>
+                <a href="index.html" class="btn btn-primary">Return to Homepage</a>
+            </div>
+
+            <!-- Application Form -->
+            <form id="applicationForm" class="card application-card">
+                <!-- Student Information -->
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--primary-color); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0;">
+                        <i class="fas fa-user-graduate"></i> Student Information
+                    </h3>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="student_first_name"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">First Name *</label>
+                            <input type="text" id="student_first_name" name="student_first_name" required
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label for="student_last_name"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Last Name *</label>
+                            <input type="text" id="student_last_name" name="student_last_name" required
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label for="date_of_birth"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Date of Birth *</label>
+                            <input type="date" id="date_of_birth" name="date_of_birth" required
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Gender
+                                *</label>
+                            <select id="gender" name="gender" required
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; background: white;">
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-span-2">
+                            <label for="applying_for_grade"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Applying for Grade
+                                *</label>
+                            <select id="applying_for_grade" name="applying_for_grade" required
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; background: white;">
+                                <option value="">Select Grade</option>
+                                <option value="Play Group">Play Group</option>
+                                <option value="Preparatory 1">Preparatory 1</option>
+                                <option value="Preparatory 2">Preparatory 2</option>
+                                <option value="Grade 1">Grade 1</option>
+                                <option value="Grade 2">Grade 2</option>
+                                <option value="Grade 3">Grade 3</option>
+                                <option value="Grade 4">Grade 4</option>
+                                <option value="Grade 5">Grade 5</option>
+                                <option value="Grade 6">Grade 6</option>
+                                <option value="Grade 7">Grade 7</option>
+                                <option value="Grade 8">Grade 8</option>
+                                <option value="Grade 9">Grade 9</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parent/Guardian Information -->
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--primary-color); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0;">
+                        <i class="fas fa-users"></i> Parent/Guardian Information
+                    </h3>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="parent_name"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Full Name *</label>
+                            <input type="text" id="parent_name" name="parent_name" required
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label for="parent_relationship"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Relationship *</label>
+                            <select id="parent_relationship" name="parent_relationship" required
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; background: white;">
+                                <option value="">Select Relationship</option>
+                                <option value="Father">Father</option>
+                                <option value="Mother">Mother</option>
+                                <option value="Guardian">Guardian</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="parent_phone"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Phone Number *</label>
+                            <input type="tel" id="parent_phone" name="parent_phone" required placeholder="+254..."
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label for="parent_email"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Email Address *</label>
+                            <input type="email" id="parent_email" name="parent_email" required
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--primary-color); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0;">
+                        <i class="fas fa-map-marker-alt"></i> Address
+                    </h3>
+                    <div class="grid grid-2">
+                        <div class="form-group col-span-2">
+                            <label for="address" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Home
+                                Address</label>
+                            <input type="text" id="address" name="address"
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label for="county"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">County</label>
+                            <input type="text" id="county" name="county" placeholder="e.g., Narok County"
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous School -->
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--primary-color); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0;">
+                        <i class="fas fa-school"></i> Previous School (if applicable)
+                    </h3>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="previous_school"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">School Name</label>
+                            <input type="text" id="previous_school" name="previous_school"
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                        <div class="form-group">
+                            <label for="previous_grade"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Last Grade
+                                Completed</label>
+                            <input type="text" id="previous_grade" name="previous_grade"
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Information -->
+                <div style="margin-bottom: 2rem;">
+                    <h3
+                        style="color: var(--primary-color); margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0;">
+                        <i class="fas fa-info-circle"></i> Additional Information
+                    </h3>
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="how_heard" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">How
+                                did you hear about MACHA?</label>
+                            <select id="how_heard" name="how_heard"
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; background: white;">
+                                <option value="">Select Option</option>
+                                <option value="Community">Community/Word of Mouth</option>
+                                <option value="Church">Church</option>
+                                <option value="Website">Website</option>
+                                <option value="Social Media">Social Media</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="medical_conditions"
+                                style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Medical
+                                Conditions/Allergies</label>
+                            <input type="text" id="medical_conditions" name="medical_conditions"
+                                placeholder="Leave blank if none"
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem;">
+                        </div>
+                        <div class="form-group col-span-2">
+                            <label for="statement" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Why
+                                do you want to join MACHA?</label>
+                            <textarea id="statement" name="statement" rows="4"
+                                placeholder="Tell us about the student and why they would be a good fit for MACHA..."
+                                style="width: 100%; padding: 0.875rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; resize: vertical;"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Error Message -->
+                <div id="errorMessage"
+                    style="display: none; background: #fed7d7; border: 1px solid #c53030; color: #c53030; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" id="submitBtn" class="btn btn-primary btn-lg" style="padding: 1rem 3rem;">
+                        <i class="fas fa-paper-plane"></i> Submit Application
+                    </button>
+                    <p style="color: var(--gray-600); font-size: 0.875rem; margin-top: 1rem;">
+                        Fields marked with * are required
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>MACHA</h4>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">
+                        Maasai Community Hope Academy - Transforming lives through Christ-centered education since 2009.
+                        Serving the Maasai community with hope and excellence.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">
+                        Join our newsletter to receive the latest news and updates from MACHA.
+                    </p>
+                    <form id="newsletter-form" class="mt-sm">
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <input type="email" placeholder="Your Email" required
+                                style="padding: 0.75rem 1rem; border-radius: var(--radius-md); border: none; flex: 1; min-width: 200px;">
+                            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-location-dot" style="margin-right: 10px;"></i> MAASAI COMMUNITY HOPE
+                            ACADEMY - ENDOINYO ONKOPIT</li>
+                        <li><i class="fas fa-box" style="margin-right: 10px;"></i> BOX 430 – 40700, KILGORIS</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> TEL: 0712598134 / 0724231396 /
+                            0724762819</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> macha.schools@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MACHA - Maasai Community Hope Academy. All rights reserved. | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Privacy Policy</a> | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Sheets Integration Script -->
+    <script>
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbximvpjKTm6E_jrK2WFm3pfy9SemOT5J_E8toNQBD3fQ--MQcRGxyWH6RzGU9EAB8j9/exec';
+
+        document.getElementById('applicationForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const errorDiv = document.getElementById('errorMessage');
+            const successDiv = document.getElementById('successMessage');
+            const form = document.getElementById('applicationForm');
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+            errorDiv.style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('timestamp', new Date().toLocaleString());
+            formData.append('student_first_name', document.getElementById('student_first_name').value);
+            formData.append('student_last_name', document.getElementById('student_last_name').value);
+            formData.append('date_of_birth', document.getElementById('date_of_birth').value);
+            formData.append('gender', document.getElementById('gender').value);
+            formData.append('applying_for_grade', document.getElementById('applying_for_grade').value);
+            formData.append('parent_name', document.getElementById('parent_name').value);
+            formData.append('parent_phone', document.getElementById('parent_phone').value);
+            formData.append('parent_email', document.getElementById('parent_email').value);
+            formData.append('parent_relationship', document.getElementById('parent_relationship').value);
+            formData.append('address', document.getElementById('address').value);
+            formData.append('county', document.getElementById('county').value);
+            formData.append('previous_school', document.getElementById('previous_school').value);
+            formData.append('previous_grade', document.getElementById('previous_grade').value);
+            formData.append('medical_conditions', document.getElementById('medical_conditions').value);
+            formData.append('how_heard', document.getElementById('how_heard').value);
+            formData.append('statement', document.getElementById('statement').value);
+
+            try {
+                const response = await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    form.style.display = 'none';
+                    successDiv.style.display = 'block';
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch (error) {
+                errorDiv.textContent = 'Failed to submit. Please try again or contact us directly.';
+                errorDiv.style.display = 'block';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Application';
+            }
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
