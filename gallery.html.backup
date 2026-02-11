@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gallery - MACHA campus life, events, and student activities in photos and videos.">
+    <title>Gallery - MACHA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Information Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-contact">
+                <a href="tel:0712598134"><i class="fas fa-phone"></i> 0712598134</a>
+                <a href="mailto:macha.schools@gmail.com"><i class="fas fa-envelope"></i> macha.schools@gmail.com</a>
+            </div>
+            <div class="top-bar-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/images/logo_macha.png" alt="MACHA Logo">
+                <div class="logo-text">
+                    <span class="logo-name">MACHA</span>
+                    <span class="logo-tagline">Maasai Community Hope Academy</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navbar-menu" id="navMenu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="admissions.html" class="navbar-link">Admissions</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="academics.html" class="navbar-link">Academics</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="student-life.html" class="navbar-link">Student Life</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="gallery.html" class="navbar-link active">Gallery</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html" class="navbar-link">Contact</a>
+                </li>
+                <li class="navbar-item" style="margin-left: 1rem;">
+                    <a href="apply.html" class="btn btn-primary btn-sm">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero hero-default animate" style="min-height: 60vh;">
+        <div class="hero-content">
+            <h1 class="hero-title">Gallery</h1>
+            <p class="hero-subtitle">
+                Capturing moments of excellence, growth, and community
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="section-sm" style="background: var(--white);">
+        <div class="container">
+            <div class="flex-center" style="gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="filterGallery('all')">All</button>
+                <button class="btn btn-ghost" onclick="filterGallery('campus')">Campus</button>
+                <button class="btn btn-ghost" onclick="filterGallery('events')">Events</button>
+                <button class="btn btn-ghost" onclick="filterGallery('sports')">Sports</button>
+                <button class="btn btn-ghost" onclick="filterGallery('arts')">Arts</button>
+                <button class="btn btn-ghost" onclick="filterGallery('academics')">Academics</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section" style="background: var(--gray-50);">
+        <div class="container">
+            <div class="grid grid-3">
+                <!-- Campus Images -->
+                <div class="card gallery-item" data-category="campus"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/campus_grounds_02.jpg" alt="Main Campus Exterior"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Main Campus Exterior</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="campus"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/campus_grounds_01.jpg" alt="School Gate"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">School Gate</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="campus"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/campus_exterior_aerial.png" alt="Campus Grounds"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Campus Grounds</h5>
+                    </div>
+                </div>
+
+                <!-- Events Images -->
+                <div class="card gallery-item" data-category="events"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/students_activity_05.jpg" alt="School Assembly"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">School Assembly</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="events"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/students_activity_06.jpg" alt="Parents Meeting"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Parents Meeting</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="events"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/academic_lab.jpg" alt="Special Event"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Special Event</h5>
+                    </div>
+                </div>
+
+                <!-- Sports Images -->
+                <div class="card gallery-item" data-category="sports"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/news_basketball_championship.jpg" alt="Basketball Court"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Basketball Court</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="sports"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/sports_basketball_01.jpg" alt="Volleyball Session"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Volleyball Session</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="sports"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/students_playing.jpg" alt="Recreational Sports"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Recreational Sports</h5>
+                    </div>
+                </div>
+
+                <!-- Arts Images -->
+                <div class="card gallery-item" data-category="arts"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/campus_facilities_03.jpg" alt="Cultural Day"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Cultural Day</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="arts"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/students_group_02.jpg" alt="Creative Arts"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Creative Arts</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="arts"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/students_activity_04.jpg" alt="Student Performance"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Student Performance</h5>
+                    </div>
+                </div>
+
+                <!-- Academics Images -->
+                <div class="card gallery-item" data-category="academics"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/academic_students_01.jpg" alt="Library Study"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Library Study</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="academics"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/news_stem_lab.jpg" alt="Science Practical"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Science Practical</h5>
+                    </div>
+                </div>
+
+                <div class="card gallery-item" data-category="academics"
+                    style="padding: 0; overflow: hidden; cursor: pointer;">
+                    <img src="assets/images/academic_students_02.jpg" alt="Computer Lab"
+                        style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1rem; text-align: center;">
+                        <h5 style="margin: 0;">Computer Lab</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h2>Campus Videos</h2>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">
+                    Experience MACHA in motion
+                </p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <div style="position: relative; padding-bottom: 56.25%;">
+                        <img src="assets/images/campus_exterior_aerial.png" alt="Campus Tour"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                        <div
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);">
+                        </div>
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;"><i class="fas fa-play"></i></div>
+                            <h4 style="color: white;">Campus Tour 2026</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <div style="position: relative; padding-bottom: 56.25%;">
+                        <img src="assets/images/students_playing.jpg" alt="Student Life"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                        <div
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);">
+                        </div>
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;"><i class="fas fa-play"></i></div>
+                            <h4 style="color: white;">Student Life Highlights</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: var(--dark-gradient); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: 1rem;">See It For Yourself</h2>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 2rem;">
+                Schedule a campus visit to experience our vibrant community firsthand.
+            </p>
+            <div class="flex-center" style="gap: 1rem; flex-wrap: wrap;">
+                <a href="contact.html" class="btn btn-primary btn-lg">Schedule a Visit</a>
+                <a href="admissions.html" class="btn btn-outline btn-lg"
+                    style="border-color: white; color: white;">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>MACHA</h4>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">
+                        Maasai Community Hope Academy - Transforming lives through Christ-centered education since 2009.
+                        Serving the Maasai community with hope and excellence.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">
+                        Join our newsletter to receive the latest news and updates from MACHA.
+                    </p>
+                    <form id="newsletter-form" class="mt-sm">
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <input type="email" placeholder="Your Email" required
+                                style="padding: 0.75rem 1rem; border-radius: var(--radius-md); border: none; flex: 1; min-width: 200px;">
+                            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-location-dot" style="margin-right: 10px;"></i> MAASAI COMMUNITY HOPE
+                            ACADEMY - ENDOINYO ONKOPIT</li>
+                        <li><i class="fas fa-box" style="margin-right: 10px;"></i> BOX 430 – 40700, KILGORIS</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> TEL: 0712598134 / 0724231396 /
+                            0724762819</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> macha.schools@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MACHA - Maasai Community Hope Academy. All rights reserved. | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Privacy Policy</a> | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.flex-center button');
+
+            // Update button styles
+            buttons.forEach(btn => {
+                btn.className = 'btn btn-ghost';
+            });
+            event.target.className = 'btn btn-primary';
+
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                    item.style.animation = 'fadeIn 0.5s ease-out';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

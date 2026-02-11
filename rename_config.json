@@ -1,0 +1,19 @@
+{
+  "image_mappings": {
+    "Hospital/IMG_20250128_125943_176.jpg": "Hospital/medical_center_01.jpg",
+    "Hospital/IMG_20250128_130018_870.jpg": "Hospital/medical_center_02.jpg",
+    "Hospital/IMG_20250128_130302_998.jpg": "Hospital/medical_center_03.jpg",
+    "Hospital/IMG_20250128_130722_228.jpg": "Hospital/medical_equipment_01.jpg",
+    "Hospital/IMG_20250128_130738_291.jpg": "Hospital/health_center_exterior.jpg",
+    "Hospital/IMG_20250128_131045_628.jpg": "Hospital/treatment_room_01.jpg",
+    "Hospital/IMG_20250128_131055_391.jpg": "Hospital/medical_services.jpg",
+    "Hospital/IMG_20250128_131637_350.jpg": "Hospital/patient_care.jpg",
+    "Hospital/IMG_20250128_131656_257.jpg": "Hospital/healthcare_facilities.jpg",
+    "Hospital/IMG_20250128_131838_538.jpg": "Hospital/community_health.jpg",
+    "Hospital/IMG_20250128_134740_779.jpg": "Hospital/medical_equipment_02.jpg",
+    "Hospital/IMG_20250128_134749_072.jpg": "Hospital/treatment_room_02.jpg",
+    "Hospital/IMG_20250128_134758_047.jpg": "Hospital/medical_center_04.jpg",
+    "Hospital/IMG_20250128_134846_323.jpg": "Hospital/medical_center_05.jpg",
+    "Hospital/IMG_20250128_134859_008.jpg": "Hospital/health_center_building.jpg"
+  }
+}

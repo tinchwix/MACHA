@@ -616,8 +616,16 @@ a:hover {
   background-image: url('https://res.cloudinary.com/dn4dszfra/image/upload/v1770486593/macha-school/macha-school/students_activity_08.jpg');
 }
 
+.hero-student-life::before {
+  background-image: url('https://res.cloudinary.com/dn4dszfra/image/upload/v1770786621/assembly_1.jpg');
+}
+
 .hero-academics::before {
   background-image: url('https://res.cloudinary.com/dn4dszfra/image/upload/v1770486444/macha-school/macha-school/academic_classroom_01.jpg');
+}
+
+.hero-admissions::before {
+  background-image: url('https://res.cloudinary.com/dn4dszfra/image/upload/v1770786149/Computer_lab_1.jpg');
 }
 
 /* Zoom Animation (Ken Burns) */

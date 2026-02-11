@@ -22,8 +22,7 @@
                 <a href="mailto:macha.schools@gmail.com"><i class="fas fa-envelope"></i> macha.schools@gmail.com</a>
             </div>
             <div class="top-bar-social">
-                <a href="https://www.facebook.com/profile.php?id=100068255200266" target="_blank"><i
-                        class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
@@ -35,8 +34,7 @@
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-logo">
-                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486530/macha-school/macha-school/logo_macha.png"
-                    alt="MACHA Logo">
+                <img src="assets/images/logo_macha.png" alt="MACHA Logo">
                 <div class="logo-text">
                     <span class="logo-name">MACHA</span>
                     <span class="logo-tagline">Maasai Community Hope Academy</span>
@@ -146,8 +144,7 @@
                     <div style="position: relative; width: 180px; height: 180px; margin: 0 auto 1.5rem;">
                         <div
                             style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 4px solid rgba(102, 126, 234, 0.5); box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);">
-                            <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486525/macha-school/macha-school/leadership_director_kikwai.jpg"
-                                alt="Pr. David Kikwai - School Director"
+                            <img src="assets/images/leadership_director_kikwai.jpg" alt="Pr. David Kikwai - School Director"
                                 style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <div
@@ -174,8 +171,8 @@
             </div>
 
             <!-- Managers Row -->
-            <!-- Leadership Team Row -->
-            <div class="grid grid-4" style="gap: 1.5rem; margin-top: 2rem;">
+            <div class="grid"
+                style="gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 900px; margin: 0 auto 2rem;">
                 <!-- Academic Manager Card -->
                 <div class="card text-center"
                     style="background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 100%); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
@@ -184,8 +181,7 @@
                     <div style="position: relative; width: 140px; height: 140px; margin: 0 auto 1.5rem;">
                         <div
                             style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid rgba(102, 126, 234, 0.4); box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);">
-                            <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486523/macha-school/macha-school/leadership_academic_manager_lenkume.jpg"
-                                alt="Mr. David Lenkume - Academic Manager"
+                            <img src="assets/images/leadership_academic_manager_lenkume.jpg" alt="Mr. David Lenkume - Academic Manager"
                                 style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <div
@@ -214,8 +210,7 @@
                     <div style="position: relative; width: 140px; height: 140px; margin: 0 auto 1.5rem;">
                         <div
                             style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid rgba(102, 126, 234, 0.4); box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);">
-                            <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486528/macha-school/macha-school/leadership_school_manager_munturi.jpg"
-                                alt="Mr. Paul Munturi - School Manager"
+                            <img src="assets/images/leadership_school_manager_munturi.jpg" alt="Mr. Paul Munturi - School Manager"
                                 style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <div
@@ -235,32 +230,34 @@
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
+            </div>
 
+            <!-- Head Teachers Row -->
+            <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
                 <!-- Primary Head Teacher Card -->
                 <div class="card text-center"
-                    style="background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                    style="background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); max-width: 320px; transition: transform 0.3s ease, box-shadow 0.3s ease;"
                     onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.25)'"
                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                    <div style="position: relative; width: 140px; height: 140px; margin: 0 auto 1.5rem;">
+                    <div style="position: relative; width: 120px; height: 120px; margin: 0 auto 1.5rem;">
                         <div
-                            style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid rgba(102, 126, 234, 0.4); box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);">
-                            <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770647489/macha-school/macha-school/macha-school/leadership_headteacher_opiyo.png"
-                                alt="Mr. Stephen Opiyo - Head Teacher"
-                                style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                            style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid rgba(102, 126, 234, 0.3); background: linear-gradient(135deg, #374151 0%, #1f2937 100%); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-user" style="font-size: 3rem; color: rgba(255,255,255,0.3);"></i>
                         </div>
                         <div
-                            style="position: absolute; bottom: 0; right: 0; width: 35px; height: 35px; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.875rem; border: 3px solid #1a1a2e;">
+                            style="position: absolute; bottom: 0; right: 0; width: 32px; height: 32px; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.75rem; border: 3px solid #1a1a2e;">
                             <i class="fas fa-chalkboard-user"></i>
                         </div>
                     </div>
-                    <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.25rem;">Mr. Stephen Opiyo</h3>
-                    <p style="color: #3b82f6; font-weight: 700; margin-bottom: 1rem;">MACHA Primary - Head Teacher</p>
-                    <p style="color: rgba(255,255,255,0.6); font-size: 0.9375rem; line-height: 1.6;">
+                    <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.125rem;">Mr. Stephen Opiyo</h3>
+                    <p style="color: #3b82f6; font-weight: 700; margin-bottom: 1rem; font-size: 0.9375rem;">MACHA
+                        Primary - Head Teacher</p>
+                    <p style="color: rgba(255,255,255,0.5); font-size: 0.875rem; line-height: 1.6;">
                         Leading MACHA school with dedication to foundational education and holistic child
                         development.
                     </p>
                     <a href="https://wa.me/254712762804" target="_blank"
-                        style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; padding: 0.5rem 1rem; background: #25D366; color: white; border-radius: 50px; font-size: 0.8125rem; font-weight: 600; text-decoration: none; transition: transform 0.2s ease;"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; padding: 0.5rem 0.875rem; background: #25D366; color: white; border-radius: 50px; font-size: 0.75rem; font-weight: 600; text-decoration: none; transition: transform 0.2s ease;"
                         onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
@@ -268,28 +265,28 @@
 
                 <!-- Olalui Hope Head Teacher Card -->
                 <div class="card text-center"
-                    style="background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                    style="background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); max-width: 320px; transition: transform 0.3s ease, box-shadow 0.3s ease;"
                     onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.25)'"
                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-                    <div style="position: relative; width: 140px; height: 140px; margin: 0 auto 1.5rem;">
+                    <div style="position: relative; width: 120px; height: 120px; margin: 0 auto 1.5rem;">
                         <div
                             style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid rgba(102, 126, 234, 0.3); background: linear-gradient(135deg, #374151 0%, #1f2937 100%); display: flex; align-items: center; justify-content: center;">
-                            <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770785124/MR._KORIR.jpg"
-                                alt="Mr. Christopher Korir" style="width: 100%; height: 100%; object-fit: cover;">
+                            <i class="fas fa-user" style="font-size: 3rem; color: rgba(255,255,255,0.3);"></i>
                         </div>
                         <div
-                            style="position: absolute; bottom: 0; right: 0; width: 35px; height: 35px; background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.875rem; border: 3px solid #1a1a2e;">
+                            style="position: absolute; bottom: 0; right: 0; width: 32px; height: 32px; background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.75rem; border: 3px solid #1a1a2e;">
                             <i class="fas fa-chalkboard-user"></i>
                         </div>
                     </div>
-                    <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.25rem;">Mr. Christopher Korir</h3>
-                    <p style="color: #8b5cf6; font-weight: 700; margin-bottom: 1rem;">Olalui Hope - Head Teacher</p>
-                    <p style="color: rgba(255,255,255,0.6); font-size: 0.9375rem; line-height: 1.6;">
+                    <h3 style="color: white; margin-bottom: 0.5rem; font-size: 1.125rem;">Mr. Christopher Korir</h3>
+                    <p style="color: #8b5cf6; font-weight: 700; margin-bottom: 1rem; font-size: 0.9375rem;">Olalui Hope
+                        - Head Teacher</p>
+                    <p style="color: rgba(255,255,255,0.5); font-size: 0.875rem; line-height: 1.6;">
                         Leading our Olalui Hope school with commitment to extending quality education to more
                         communities.
                     </p>
                     <a href="https://wa.me/254724301112" target="_blank"
-                        style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; padding: 0.5rem 1rem; background: #25D366; color: white; border-radius: 50px; font-size: 0.8125rem; font-weight: 600; text-decoration: none; transition: transform 0.2s ease;"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; padding: 0.5rem 0.875rem; background: #25D366; color: white; border-radius: 50px; font-size: 0.75rem; font-weight: 600; text-decoration: none; transition: transform 0.2s ease;"
                         onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
@@ -311,8 +308,7 @@
 
             <div class="card" style="padding: 0; overflow: hidden; max-width: 1000px; margin: 0 auto;">
                 <div style="position: relative; padding-bottom: 56.25%;">
-                    <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486466/macha-school/macha-school/campus_exterior_main.jpg"
-                        alt="MACHA Campus"
+                    <img src="assets/images/campus_exterior_main.jpg" alt="MACHA Campus"
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
                     <div
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);">
@@ -344,8 +340,7 @@
             <div class="grid grid-4">
                 <div class="card">
                     <div style="margin-bottom: 1rem;">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486529/macha-school/macha-school/logo_adventist.png"
-                            alt="SDA Logo" style="height: 90px;">
+                        <img src="assets/images/logo_adventist.png" alt="SDA Logo" style="height: 90px;">
                     </div>
                     <h3 class="card-title">Christ-Centered Education</h3>
                     <p class="card-text">
@@ -409,83 +404,67 @@
                 <div class="carousel-track" id="carouselTrack">
                     <!-- Slide 1 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486491/macha-school/macha-school/gallery_students_01.jpg"
-                            alt="Daily life at MACHA 1">
+                        <img src="assets/images/gallery_students_01.jpg" alt="Daily life at MACHA 1">
                     </div>
                     <!-- Slide 2 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486492/macha-school/macha-school/gallery_students_02.jpg"
-                            alt="Daily life at MACHA 2">
+                        <img src="assets/images/gallery_students_02.jpg" alt="Daily life at MACHA 2">
                     </div>
                     <!-- Slide 3 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486494/macha-school/macha-school/gallery_students_03.jpg"
-                            alt="Daily life at MACHA 3">
+                        <img src="assets/images/gallery_students_03.jpg" alt="Daily life at MACHA 3">
                     </div>
                     <!-- Slide 4 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486498/macha-school/macha-school/gallery_students_04.jpg"
-                            alt="Daily life at MACHA 4">
+                        <img src="assets/images/gallery_students_04.jpg" alt="Daily life at MACHA 4">
                     </div>
                     <!-- Slide 5 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486499/macha-school/macha-school/gallery_students_05.jpg"
-                            alt="Daily life at MACHA 5">
+                        <img src="assets/images/gallery_students_05.jpg" alt="Daily life at MACHA 5">
                     </div>
                     <!-- Slide 6 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486503/macha-school/macha-school/gallery_students_06.jpg"
-                            alt="Daily life at MACHA 6">
+                        <img src="assets/images/gallery_students_06.jpg" alt="Daily life at MACHA 6">
                     </div>
                     <!-- Slide 7 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486505/macha-school/macha-school/gallery_students_07.jpg"
-                            alt="Daily life at MACHA 7">
+                        <img src="assets/images/gallery_students_07.jpg" alt="Daily life at MACHA 7">
                     </div>
                     <!-- Slide 8 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486506/macha-school/macha-school/gallery_students_08.jpg"
-                            alt="Daily life at MACHA 8">
+                        <img src="assets/images/gallery_students_08.jpg" alt="Daily life at MACHA 8">
                     </div>
                     <!-- Slide 9 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486508/macha-school/macha-school/gallery_students_09.jpg"
-                            alt="Daily life at MACHA 9">
+                        <img src="assets/images/gallery_students_09.jpg" alt="Daily life at MACHA 9">
                     </div>
                     <!-- Slide 10 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486509/macha-school/macha-school/gallery_students_10.jpg"
-                            alt="Daily life at MACHA 10">
+                        <img src="assets/images/gallery_students_10.jpg" alt="Daily life at MACHA 10">
                     </div>
                     <!-- Slide 11 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486511/macha-school/macha-school/gallery_students_11.jpg"
-                            alt="Daily life at MACHA 11">
+                        <img src="assets/images/gallery_students_11.jpg" alt="Daily life at MACHA 11">
                     </div>
                     <!-- Slide 12 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486513/macha-school/macha-school/gallery_students_12.jpg"
-                            alt="Daily life at MACHA 12">
+                        <img src="assets/images/gallery_students_12.jpg" alt="Daily life at MACHA 12">
                     </div>
                     <!-- Slide 13 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486515/macha-school/macha-school/gallery_students_13.jpg"
-                            alt="Daily life at MACHA 13">
+                        <img src="assets/images/gallery_students_13.jpg" alt="Daily life at MACHA 13">
                     </div>
                     <!-- Slide 14 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486516/macha-school/macha-school/gallery_students_14.jpg"
-                            alt="Daily life at MACHA 14">
+                        <img src="assets/images/gallery_students_14.jpg" alt="Daily life at MACHA 14">
                     </div>
                     <!-- Slide 15 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486519/macha-school/macha-school/gallery_students_15.jpg"
-                            alt="Daily life at MACHA 15">
+                        <img src="assets/images/gallery_students_15.jpg" alt="Daily life at MACHA 15">
                     </div>
                     <!-- Slide 16 -->
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486522/macha-school/macha-school/gallery_students_16.jpg"
-                            alt="Daily life at MACHA 16">
+                        <img src="assets/images/gallery_students_16.jpg" alt="Daily life at MACHA 16">
                     </div>
                 </div>
 
@@ -604,8 +583,8 @@
 
             <div class="grid grid-3">
                 <div class="card" style="padding: 0; overflow: hidden;">
-                    <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486547/macha-school/macha-school/news_science_fair.jpg"
-                        alt="Science Fair" style="width: 100%; height: 200px; object-fit: cover;">
+                    <img src="assets/images/news_science_fair.jpg" alt="Science Fair"
+                        style="width: 100%; height: 200px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
                         <div
                             style="font-size: 0.875rem; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">
@@ -615,45 +594,44 @@
                         <p style="color: var(--gray-600); margin-bottom: 1rem;">
                             Congratulations to our students who won top honors at the Regional Science Fair...
                         </p>
-                        <a href="gallery.html" class="btn btn-ghost btn-sm">Read More <i class="fas fa-arrow-right"
+                        <a href="#" class="btn btn-ghost btn-sm">Read More <i class="fas fa-arrow-right"
                                 style="font-size: 0.8em; margin-left: 5px;"></i></a>
                     </div>
                 </div>
 
                 <div class="card" style="padding: 0; overflow: hidden;">
-                    <img src="assets/images/students_science_lab_1769685040829.png" alt="Mazingira Day"
+                    <img src="assets/images/students_science_lab_1769685040829.png" alt="STEM Lab"
                         style="width: 100%; height: 200px; object-fit: cover; display: none;">
                     <!-- Backup if needed, but reusing science-lab above -->
-                    <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486549/macha-school/macha-school/news_stem_lab.jpg"
-                        alt="Mazingira Day Tree Planting" style="width: 100%; height: 200px; object-fit: cover;">
+                    <img src="assets/images/news_stem_lab.jpg" alt="STEM Lab"
+                        style="width: 100%; height: 200px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
                         <div
                             style="font-size: 0.875rem; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">
-                            November 13, 2025
+                            January 20, 2026
                         </div>
-                        <h4 style="margin-bottom: 1rem;">MAZINGIRA Day Tree Planting</h4>
+                        <h4 style="margin-bottom: 1rem;">New STEM Lab Opening</h4>
                         <p style="color: var(--gray-600); margin-bottom: 1rem;">
-                            Students joined the national Kenya Tree Planting Day celebrations, planting trees on
-                            campus...
+                            Our state-of-the-art STEM laboratory is now open, featuring cutting-edge equipment...
                         </p>
-                        <a href="gallery.html" class="btn btn-ghost btn-sm">Read More <i class="fas fa-arrow-right"
+                        <a href="#" class="btn btn-ghost btn-sm">Read More <i class="fas fa-arrow-right"
                                 style="font-size: 0.8em; margin-left: 5px;"></i></a>
                     </div>
                 </div>
 
                 <div class="card" style="padding: 0; overflow: hidden;">
-                    <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486544/macha-school/macha-school/news_basketball_championship.jpg"
-                        alt="Basketball Championship" style="width: 100%; height: 200px; object-fit: cover;">
+                    <img src="assets/images/news_basketball_championship.jpg" alt="Basketball Championship"
+                        style="width: 100%; height: 200px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
                         <div
                             style="font-size: 0.875rem; color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">
-                            February 5, 2026
+                            January 15, 2026
                         </div>
-                        <h4 style="margin-bottom: 1rem;">MACHA Hosts Inter-School Basketball Championship</h4>
+                        <h4 style="margin-bottom: 1rem;">Basketball Team Wins Championship</h4>
                         <p style="color: var(--gray-600); margin-bottom: 1rem;">
-                            Students showcased exceptional sportsmanship welcoming teams from across Trans-Mara...
+                            Our varsity basketball team brought home the regional championship trophy...
                         </p>
-                        <a href="gallery.html" class="btn btn-ghost btn-sm">Read More <i class="fas fa-arrow-right"
+                        <a href="#" class="btn btn-ghost btn-sm">Read More <i class="fas fa-arrow-right"
                                 style="font-size: 0.8em; margin-left: 5px;"></i></a>
                     </div>
                 </div>

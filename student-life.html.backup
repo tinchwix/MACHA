@@ -20,8 +20,7 @@
                 <a href="mailto:macha.schools@gmail.com"><i class="fas fa-envelope"></i> macha.schools@gmail.com</a>
             </div>
             <div class="top-bar-social">
-                <a href="https://www.facebook.com/profile.php?id=100068255200266" target="_blank"><i
-                        class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
@@ -33,8 +32,7 @@
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="navbar-logo">
-                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486530/macha-school/macha-school/logo_macha.png"
-                    alt="MACHA Logo">
+                <img src="assets/images/logo_macha.png" alt="MACHA Logo">
                 <div class="logo-text">
                     <span class="logo-name">MACHA</span>
                     <span class="logo-tagline">Maasai Community Hope Academy</span>
@@ -74,7 +72,7 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero hero-student-life animate" style="min-height: 60vh;">
+    <section class="hero hero-default animate" style="min-height: 60vh;">
         <div class="hero-content">
             <h1 class="hero-title">Student Life</h1>
             <p class="hero-subtitle">
@@ -135,8 +133,8 @@
                 </div>
 
                 <div class="card" style="padding: 0; overflow: hidden;">
-                    <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486466/macha-school/macha-school/campus_exterior_main.jpg"
-                        alt="Modern Dormitories" style="width: 100%; height: 400px; object-fit: cover;">
+                    <img src="assets/images/campus_exterior_main.jpg" alt="Modern Dormitories"
+                        style="width: 100%; height: 400px; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -224,8 +222,7 @@
                         <div class="carousel-inner" style="height: 100%;">
                             <!-- Slide 1: Movies -->
                             <div class="carousel-item active" style="height: 100%; position: relative; display: block;">
-                                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486488/macha-school/macha-school/entertainment_movie_war_room.jpg"
-                                    alt="Inspirational Movie: War Room"
+                                <img src="assets/images/entertainment_movie_war_room.jpg" alt="Inspirational Movie: War Room"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                                 <div
                                     style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 1.5rem;">
@@ -235,7 +232,7 @@
                             </div>
                             <!-- Slide 2: Football -->
                             <div class="carousel-item" style="height: 100%; position: relative; display: none;">
-                                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486487/macha-school/macha-school/entertainment_football_flyer.jpg"
+                                <img src="assets/images/entertainment_football_flyer.jpg"
                                     alt="Football Match Screenings"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                                 <div
