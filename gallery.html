@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="School Life & Events - MACHA latest news, upcoming events, student activities, and campus life updates.">
+    <title>School Life & Events - MACHA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* ============================================
+           EVENTS & NEWS PAGE - PREMIUM STYLES
+           ============================================ */
+
+        /* Hero with warm golden overlay */
+        .hero-events::before {
+            background-image: url('https://res.cloudinary.com/dn4dszfra/image/upload/v1770486593/macha-school/macha-school/students_activity_08.jpg');
+        }
+
+        .hero-events::after {
+            background: linear-gradient(135deg, rgba(210, 120, 25, 0.85) 0%, rgba(180, 90, 20, 0.9) 100%);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            padding: 2rem 0;
+            margin-top: -4rem;
+            position: relative;
+            z-index: 20;
+            border-radius: var(--radius-2xl);
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .stat-item {
+            padding: 1rem;
+        }
+
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            font-weight: 800;
+            color: #fbbf24;
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+
+        /* Student Activities Section */
+        .activities-section {
+            background: var(--white);
+            padding: 5rem 0;
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .activities-content h2 {
+            color: #1a365d;
+            margin-bottom: 1.5rem;
+        }
+
+        .activities-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .activities-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 0.875rem 0;
+            border-bottom: 1px solid var(--gray-100);
+            font-size: 1rem;
+            color: var(--gray-700);
+        }
+
+        .activities-list li i {
+            color: #d97706;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .activities-list li:hover {
+            color: #1a365d;
+        }
+
+        .activities-image {
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            position: relative;
+        }
+
+        .activities-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .activities-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .activities-image-badge {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .activities-image-badge h4 {
+            margin: 0;
+            color: #1a365d;
+            font-size: 1.1rem;
+        }
+
+        .activities-image-badge p {
+            margin: 0.25rem 0 0;
+            color: var(--gray-600);
+            font-size: 0.875rem;
+        }
+
+        /* Campus Experience / News Section */
+        .news-section {
+            background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 5rem 0;
+        }
+
+        .news-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .news-header h2 {
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-header p {
+            color: var(--gray-600);
+            font-size: 1.125rem;
+        }
+
+        /* Featured Article */
+        .featured-article {
+            position: relative;
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-2xl);
+            height: 450px;
+        }
+
+        .featured-article img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .featured-article-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 3rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+            color: white;
+        }
+
+        .featured-badge {
+            display: inline-block;
+            background: #d97706;
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .featured-article-overlay h2 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .featured-article-overlay p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            max-width: 700px;
+        }
+
+        .featured-meta {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .featured-meta i {
+            margin-right: 0.5rem;
+        }
+
+        /* News Cards Grid */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .news-card-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .news-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .news-card:hover .news-card-image img {
+            transform: scale(1.1);
+        }
+
+        .news-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: linear-gradient(135deg, #5a67d8, #6b46c1);
+            color: white;
+            padding: 0.35rem 0.875rem;
+            border-radius: var(--radius-full);
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .news-category.sports {
+            background: linear-gradient(135deg, #059669, #10b981);
+        }
+
+        .news-category.arts {
+            background: linear-gradient(135deg, #ec4899, #f472b6);
+        }
+
+        .news-category.events {
+            background: linear-gradient(135deg, #d97706, #fbbf24);
+        }
+
+        .news-date-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: white;
+            padding: 0.5rem 0.75rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        .news-date-badge .day {
+            display: block;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #1a365d;
+            line-height: 1;
+        }
+
+        .news-date-badge .month {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            color: var(--gray-500);
+            font-weight: 600;
+        }
+
+        .news-card-content {
+            padding: 1.5rem;
+        }
+
+        .news-card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .news-card-excerpt {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .news-card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #d97706;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: gap 0.3s ease;
+        }
+
+        .news-card-link:hover {
+            gap: 0.875rem;
+            color: #b45309;
+        }
+
+        /* Upcoming Events Section */
+        .events-section {
+            background: #1a365d;
+            padding: 5rem 0;
+        }
+
+        .events-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+
+        .events-header h2 {
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .events-header p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .event-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-xl);
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .event-card:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .event-date {
+            background: #d97706;
+            width: 70px;
+            height: 70px;
+            border-radius: var(--radius-lg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        .event-date .day {
+            font-size: 1.75rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .event-date .month {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        .event-card h4 {
+            color: white;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .event-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .event-card i {
+            margin-right: 0.4rem;
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 5rem 0;
+        }
+
+        .testimonial-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .testimonial-image {
+            position: relative;
+        }
+
+        .testimonial-image img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .testimonial-image::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: -1rem;
+            width: 100%;
+            height: 100%;
+            border: 4px solid #d97706;
+            border-radius: var(--radius-2xl);
+            z-index: -1;
+        }
+
+        .testimonial-content {
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 4rem;
+            color: #d97706;
+            opacity: 0.3;
+            position: absolute;
+            top: -2rem;
+            left: -1rem;
+            font-family: Georgia, serif;
+        }
+
+        .testimonial-text {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: var(--gray-700);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-author-info h4 {
+            margin: 0;
+            color: #1a365d;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author-info p {
+            margin: 0;
+            color: var(--gray-500);
+            font-size: 0.9rem;
+        }
+
+        /* Photo Marquee */
+        .photo-marquee-section {
+            padding: 3rem 0;
+            background: white;
+            overflow: hidden;
+        }
+
+        .marquee-wrapper {
+            display: flex;
+            gap: 1rem;
+            animation: marquee 30s linear infinite;
+        }
+
+        .marquee-wrapper:hover {
+            animation-play-state: paused;
+        }
+
+        .marquee-item {
+            flex-shrink: 0;
+            width: 300px;
+            height: 200px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .marquee-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .marquee-item:hover img {
+            transform: scale(1.1);
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .events-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .stats-bar {
+                margin-top: -2rem;
+                border-radius: var(--radius-xl);
+            }
+
+            .activities-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .activities-image {
+                order: -1;
+            }
+
+            .featured-article {
+                height: 350px;
+            }
+
+            .featured-article-overlay {
+                padding: 1.5rem;
+            }
+
+            .featured-article-overlay h2 {
+                font-size: 1.5rem;
+            }
+
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .testimonial-image {
+                justify-self: center;
+            }
+
+            .testimonial-author {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Information Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-contact">
+                <a href="tel:0712598134"><i class="fas fa-phone"></i> 0712598134</a>
+                <a href="mailto:macha.schools@gmail.com"><i class="fas fa-envelope"></i> macha.schools@gmail.com</a>
+            </div>
+            <div class="top-bar-social">
+                <a href="https://www.facebook.com/profile.php?id=100068255200266" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486530/macha-school/macha-school/logo_macha.png"
+                    alt="MACHA Logo">
+                <div class="logo-text">
+                    <span class="logo-name">MACHA</span>
+                    <span class="logo-tagline">Maasai Community Hope Academy</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navbar-menu" id="navMenu">
+                <li class="navbar-item">
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="admissions.html" class="navbar-link">Admissions</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="academics.html" class="navbar-link">Academics</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="student-life.html" class="navbar-link">Student Life</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="gallery.html" class="navbar-link active">Events & News</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html" class="navbar-link">Contact</a>
+                </li>
+                <li class="navbar-item" style="margin-left: 1rem;">
+                    <a href="apply.html" class="btn btn-primary btn-sm">Apply Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-events animate" style="min-height: 70vh;">
+        <div class="hero-content">
+            <h1 class="hero-title">School Life & Events</h1>
+            <p class="hero-subtitle">
+                Discover the vibrant community, exciting activities, and inspiring stories that make MACHA extraordinary
+            </p>
+            <div class="hero-buttons">
+                <a href="#latest-news" class="btn btn-primary btn-lg">Latest News</a>
+                <a href="#upcoming-events" class="btn btn-outline btn-lg"
+                    style="border-color: white; color: white;">Upcoming Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">50+</span>
+                    <div class="stat-label">Events Per Year</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="12">12</span>
+                    <div class="stat-label">Student Clubs</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="8">8</span>
+                    <div class="stat-label">Sports Teams</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="100">100%</span>
+                    <div class="stat-label">Student Participation</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Activities Section -->
+    <section class="activities-section">
+        <div class="container">
+            <div class="activities-grid">
+                <div class="activities-content">
+                    <h2>Student Activities</h2>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem;">
+                        At MACHA, we believe in nurturing well-rounded individuals. Our diverse range of activities
+                        helps students discover their passions and develop leadership skills.
+                    </p>
+                    <ul class="activities-list">
+                        <li>
+                            <i class="fas fa-users"></i>
+                            <span><strong>Student Government & Leadership Council</strong> - Developing future
+                                leaders</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-futbol"></i>
+                            <span><strong>Inter-house Sports Competitions</strong> - Football, basketball, volleyball &
+                                athletics</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-music"></i>
+                            <span><strong>Choir & Music Club</strong> - Weekly practices and festival
+                                performances</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-hands-praying"></i>
+                            <span><strong>Christian Fellowship & Sabbath Programs</strong> - Spiritual growth
+                                activities</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-palette"></i>
+                            <span><strong>Drama & Creative Arts Club</strong> - Cultural performances and
+                                exhibitions</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-flask"></i>
+                            <span><strong>Science & Environmental Club</strong> - Experiments and conservation
+                                projects</span>
+                        </li>
+                    </ul>
+                    <a href="student-life.html" class="btn btn-primary" style="margin-top: 1.5rem;">
+                        Explore Student Life <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+                <div class="activities-image">
+                    <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770786149/Computer_lab_1.jpg"
+                        alt="Modern Computer Lab at MACHA">
+                    <div class="activities-image-badge">
+                        <h4>Modern Computer Lab</h4>
+                        <p>Advanced digital learning resources</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Experience / Latest News Section -->
+    <section class="news-section" id="latest-news">
+        <div class="container">
+            <div class="news-header">
+                <h2>The Campus Experience</h2>
+                <p>Stay updated with the latest happenings at MACHA</p>
+            </div>
+
+            <!-- Featured Article -->
+            <div class="featured-article">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486544/macha-school/macha-school/news_basketball_championship.jpg"
+                    alt="MACHA Basketball Championship">
+                <div class="featured-article-overlay">
+                    <span class="featured-badge"><i class="fas fa-star"></i> Featured Story</span>
+                    <h2>MACHA Hosts Annual Inter-School Basketball Championship</h2>
+                    <p>Our students showcased exceptional sportsmanship and skill as we welcomed teams from across
+                        Trans-Mara for our annual basketball championship. The event brought together over 200 athletes
+                        and spectators in a celebration of youth sports.</p>
+                    <div class="featured-meta">
+                        <span><i class="fas fa-calendar"></i> February 5, 2026</span>
+                        <span><i class="fas fa-user"></i> Sports Department</span>
+                        <span><i class="fas fa-tag"></i> Sports</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Grid -->
+            <div class="news-grid">
+                <!-- News Card 1 -->
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486549/macha-school/macha-school/news_stem_lab.jpg"
+                            alt="Mazingira Day Tree Planting">
+                        <span class="news-category events">Events</span>
+                        <div class="news-date-badge">
+                            <span class="day">13</span>
+                            <span class="month">Nov</span>
+                        </div>
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">MAZINGIRA Day 2025: Students Plant Trees for a Greener Future</h3>
+                        <p class="news-card-excerpt">Students and staff joined the national Kenya Tree Planting Day
+                            celebrations,
+                            planting indigenous trees across campus as part of our environmental conservation efforts.
+                        </p>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486571/macha-school/macha-school/students_activity_04.jpg"
+                            alt="Week of Spiritual Emphasis">
+                        <span class="news-category events">Events</span>
+                        <div class="news-date-badge">
+                            <span class="day">18</span>
+                            <span class="month">Oct</span>
+                        </div>
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">End of Week of Spiritual Emphasis</h3>
+                        <p class="news-card-excerpt">Students and staff concluded a powerful Week of Spiritual Emphasis
+                            with
+                            special prayer sessions, inspiring messages, and spiritual renewal activities during third
+                            term.</p>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Card 3 -->
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486583/macha-school/macha-school/students_activity_05.jpg"
+                            alt="Parents Meeting">
+                        <span class="news-category events">Events</span>
+                        <div class="news-date-badge">
+                            <span class="day">20</span>
+                            <span class="month">Jan</span>
+                        </div>
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">Annual Parents' Meeting Addresses 2026 Vision</h3>
+                        <p class="news-card-excerpt">School administration and parents discussed academic plans, new
+                            facilities, and strategies to enhance student performance this academic year.</p>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Card 4 -->
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486552/macha-school/macha-school/sports_basketball_01.jpg"
+                            alt="Sports Day">
+                        <span class="news-category sports">Sports</span>
+                        <div class="news-date-badge">
+                            <span class="day">15</span>
+                            <span class="month">Jan</span>
+                        </div>
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">Inter-House Sports Day Crowns New Champions</h3>
+                        <p class="news-card-excerpt">Eagle House emerged victorious in this year's sports competition,
+                            showcasing exceptional athleticism across multiple disciplines.</p>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Card 5 -->
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486458/macha-school/macha-school/academic_students_01.jpg"
+                            alt="Grade 9 Students Studying">
+                        <span class="news-category">Academics</span>
+                        <div class="news-date-badge">
+                            <span class="day">10</span>
+                            <span class="month">Jan</span>
+                        </div>
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">Grade 9 Students Begin KJSEA Preparation</h3>
+                        <p class="news-card-excerpt">Our Grade 9 candidates have started intensive revision sessions
+                            with
+                            extended library hours and special tutorials to prepare for the Kenya Junior Secondary
+                            Education Assessment.</p>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- News Card 6 -->
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486477/macha-school/macha-school/campus_facilities_03.jpg"
+                            alt="New Facilities">
+                        <span class="news-category events">Events</span>
+                        <div class="news-date-badge">
+                            <span class="day">05</span>
+                            <span class="month">Jan</span>
+                        </div>
+                    </div>
+                    <div class="news-card-content">
+                        <h3 class="news-card-title">Grand Opening: New Dormitory Block Inaugurated</h3>
+                        <p class="news-card-excerpt">The newly constructed girls' dormitory was officially opened,
+                            providing modern, comfortable accommodation for 80 additional students.</p>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events-section" id="upcoming-events">
+        <div class="container">
+            <div class="events-header">
+                <h2>Upcoming Events</h2>
+                <p>Mark your calendars for these exciting events</p>
+            </div>
+
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">14</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <h4>Valentine's Sabbath</h4>
+                    <p><i class="fas fa-heart"></i> Showing Love to Others</p>
+                    <p><i class="fas fa-hand-holding-heart"></i> Community Outreach</p>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <h4>Music Festival</h4>
+                    <p><i class="fas fa-clock"></i> 2:00 PM - 6:00 PM</p>
+                    <p><i class="fas fa-location-dot"></i> Amphitheatre</p>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">13</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <h4>MAZINGIRA Holiday</h4>
+                    <p><i class="fas fa-tree"></i> Kenya Tree Planting Day</p>
+                    <p><i class="fas fa-location-dot"></i> School Grounds</p>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <h4>Parents' Day</h4>
+                    <p><i class="fas fa-clock"></i> All Day Event</p>
+                    <p><i class="fas fa-location-dot"></i> School Campus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial-container">
+                <div class="testimonial-image">
+                    <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770647489/macha-school/macha-school/macha-school/leadership_headteacher_opiyo.png"
+                        alt="Mr. Stephen Opiyo - School Principal" style="object-position: top;">
+                </div>
+                <div class="testimonial-content">
+                    <span class="testimonial-quote">"</span>
+                    <p class="testimonial-text">
+                        Our goal has always been to create an environment where every child can thrive academically,
+                        spiritually, and socially. The growth I've witnessed in our students over the years continues
+                        to inspire me. Together with our dedicated staff and supportive community, we are building
+                        a generation of leaders who will transform our society.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-info">
+                            <h4>Mr. Opiyo</h4>
+                            <p>School Principal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Marquee -->
+    <section class="photo-marquee-section">
+        <div class="marquee-wrapper">
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486483/macha-school/macha-school/campus_grounds_02.jpg"
+                    alt="Campus Grounds">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486605/macha-school/macha-school/students_playing.jpg"
+                    alt="Students Playing">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486461/macha-school/macha-school/academic_students_02.jpg"
+                    alt="Academic Students">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486464/macha-school/macha-school/campus_exterior_aerial.jpg"
+                    alt="Campus Aerial View">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486587/macha-school/macha-school/students_activity_06.jpg"
+                    alt="Student Activities">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486479/macha-school/macha-school/campus_grounds_01.jpg"
+                    alt="School Gate">
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486483/macha-school/macha-school/campus_grounds_02.jpg"
+                    alt="Campus Grounds">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486605/macha-school/macha-school/students_playing.jpg"
+                    alt="Students Playing">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486461/macha-school/macha-school/academic_students_02.jpg"
+                    alt="Academic Students">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486464/macha-school/macha-school/campus_exterior_aerial.jpg"
+                    alt="Campus Aerial View">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486587/macha-school/macha-school/students_activity_06.jpg"
+                    alt="Student Activities">
+            </div>
+            <div class="marquee-item">
+                <img src="https://res.cloudinary.com/dn4dszfra/image/upload/v1770486479/macha-school/macha-school/campus_grounds_01.jpg"
+                    alt="School Gate">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--dark-gradient); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: 1rem;">Stay Connected</h2>
+            <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 2rem;">
+                Subscribe to our newsletter to receive the latest news, events, and updates from MACHA directly in your
+                inbox.
+            </p>
+            <form
+                style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; max-width: 500px; margin: 0 auto;">
+                <input type="email" placeholder="Enter your email address" required
+                    style="flex: 1; min-width: 250px; padding: 1rem 1.5rem; border-radius: var(--radius-full); border: none; font-size: 1rem;">
+                <button type="submit" class="btn btn-primary btn-lg">Subscribe <i class="fas fa-paper-plane"
+                        style="margin-left: 0.5rem;"></i></button>
+            </form>
+            <div style="margin-top: 2rem;">
+                <a href="contact.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Contact
+                    Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>MACHA</h4>
+                    <p style="color: rgba(255,255,255,0.8); line-height: 1.6;">
+                        Maasai Community Hope Academy - Transforming lives through Christ-centered education since 2009.
+                        Serving the Maasai community with hope and excellence.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="student-life.html">Student Life</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Stay Updated</h4>
+                    <p style="font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 1rem;">
+                        Join our newsletter to receive the latest news and updates from MACHA.
+                    </p>
+                    <form id="newsletter-form" class="mt-sm">
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <input type="email" placeholder="Your Email" required
+                                style="padding: 0.75rem 1rem; border-radius: var(--radius-md); border: none; flex: 1; min-width: 200px;">
+                            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-location-dot" style="margin-right: 10px;"></i> MAASAI COMMUNITY HOPE
+                            ACADEMY - ENDOINYO ONKOPIT</li>
+                        <li><i class="fas fa-box" style="margin-right: 10px;"></i> BOX 430 – 40700, KILGORIS</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> TEL: 0712598134 / 0724231396 /
+                            0724762819</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> macha.schools@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MACHA - Maasai Community Hope Academy. All rights reserved. | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Privacy Policy</a> | <a href="#"
+                        style="color: rgba(255,255,255,0.8);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
